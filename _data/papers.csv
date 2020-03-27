@@ -1,4 +1,4 @@
-ID,speaker,title,speaker_email
-1,Shakir Mohamed,"Paper A",a@deepmind.com
-2,Sasha Rush,"Paper B",b@gmail.com
+ID,speaker,title,speaker_email,slide_id
+1,Shakir Mohamed,"Paper A",a@deepmind.com,38915748
+2,Sasha Rush,"Paper B",b@gmail.com,38915748
 
