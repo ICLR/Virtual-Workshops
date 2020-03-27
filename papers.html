@@ -11,22 +11,17 @@
 
   <body >
   
-
+{% for talk in talks %}
 <div class="container">
-  
-
 <div class="card" >
   <div class="card-body">
-    <h3 class="card-title">{{content.title}}</h3>
-    <h6 class="card-subtitle mb-2 text-muted">{% for author in content.authors %}
-      {{author}},
-      {% endfor %}
+    <h3 class="card-title">{{talk.title}}</h3>
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{talk.speaker}},
     </h6>
-    <p class="card-text"><span class="font-weight-bold">TL;DR:</span> {{content.TLDR}}</p>
-    <p class="card-text"><span class="font-weight-bold">Abstract:</span> {{content.abstract}}</p>
     
     <center>
-      <a class="card-link" {{content.pdf}}">Paper</a>
+      <a class="card-link" {{talk.pdf}}">Paper</a>
     <!-- <span><a href="" class="btn btn-secondary">OpenReview</a></span> -->
 
     </center>
@@ -51,4 +46,6 @@
         verticalEnabled: true
     });
 </script>
+{% endfor %}                                                                    
+                                                                    
 </body>
