@@ -4,28 +4,22 @@ layout: post
 ---
 <script src='https://slideslive.com/embed_presentation.js'></script>
 
+<!-- From _data/papers.cvs -->
 {% for talk in site.data.papers %}
 <div class="container">
-<div class="card" >
-  <div class="card-body">
-    <h3 class="card-title">{{talk.title}}</h3>
-    <h6 class="card-subtitle mb-2 text-muted">
-      {{talk.speaker}},
-    </h6>
-    
-    <center>
-      <a class="card-link" {{talk.pdf}}">Paper</a>
-    <!-- <span><a href="" class="btn btn-secondary">OpenReview</a></span> -->
+  <div class="card" >
+    <div class="card-body">
+      <h3 class="card-title">{{talk.title}}</h3>
+      <h6 class="card-subtitle mb-2 text-muted">
+        {{talk.speaker}}
+      </h6>
 
-    </center>
-    <p></p>
- 
+      <center>
+            <!-- <a class="card-link" {{talk.pdf}}">Paper</a> -->
+      </center>
+      <p></p>
+    </div>
   </div>
-</div>
-
-<div>
-</div>
-
 </div>
 
 
