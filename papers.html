@@ -11,7 +11,7 @@
 
   <body >
   
-{% for talk in talks %}
+{% for talk in side.data.talks %}
 <div class="container">
 <div class="card" >
   <div class="card-body">
@@ -41,7 +41,7 @@
 <script src='https://slideslive.com/embed_presentation.js'></script>
 <script>
   embed = new SlidesLiveEmbed('presentation-embed-38915748', {
-        presentationId: '38915748',
+        presentationId: '{{content.slideid}}',
         autoPlay: false, // change to true to autoplay the embedded presentation
         verticalEnabled: true
     });
