@@ -2,6 +2,7 @@
 title: Workshop
 layout: post
 ---
+<script src='https://slideslive.com/embed_presentation.js'></script>
 
 {% for talk in site.data.papers %}
 <div class="container">
@@ -29,10 +30,9 @@ layout: post
 
 
 <!-- SlidesLive -->
-<div id="presentation-embed-38915748" class="container container-sm"></div>
-<script src='https://slideslive.com/embed_presentation.js'></script>
+<div id="presentation-embed-{{talk.slide_id}}" class="container container-sm"></div>
 <script>
-  embed = new SlidesLiveEmbed('presentation-embed-38915748', {
+  embed = new SlidesLiveEmbed('presentation-embed-{{talk.slide_id}}', {
         presentationId: '{{talk.slide_id}}',
         autoPlay: false, // change to true to autoplay the embedded presentation
         verticalEnabled: true
